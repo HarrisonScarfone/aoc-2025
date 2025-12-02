@@ -44,9 +44,7 @@ def part2():
         low, high = int(id1), int(id2)
 
         for i in range(low, high+1):
-            r = validate_id(str(i))
-            if r:
-                result += validate_id(str(i))
+            result += validate_id(str(i))
 
     return result
 
